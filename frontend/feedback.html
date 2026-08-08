@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>CampusPulse | Give Feedback</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+            <span class="logo-icon">✦</span>
+            CampusPulse
+        </a>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="feedback.html" class="active">
+                Give Feedback
+            </a>
+
+            <a href="admin.html">
+                Dashboard
+            </a>
+
+        </nav>
+
+        <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle dark mode">
+            🌙
+        </button>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="feedback-page">
+
+        <!-- INTRO -->
+
+        <section class="feedback-intro">
+
+            <span class="badge">
+                💬 Your Voice Matters
+            </span>
+
+            <h1>
+                Tell us what you
+                <span>really think.</span>
+            </h1>
+
+            <p>
+                Your feedback helps us understand student
+                experiences and create a better campus
+                environment.
+            </p>
+
+        </section>
+
+
+        <!-- ================= FORM CARD ================= -->
+
+        <section class="feedback-container">
+
+            <form
+                id="feedbackForm"
+                class="feedback-form">
+
+                <!-- ================= ABOUT YOU ================= -->
+
+                <div class="form-section">
+
+                    <div class="form-section-heading">
+
+                        <span class="step-number">
+                            01
+                        </span>
+
+                        <div>
+
+                            <h2>
+                                About you
+                            </h2>
+
+                            <p>
+                                Tell us a little about yourself.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="form-grid">
+
+                        <!-- NAME -->
+
+                        <div class="input-group">
+
+                            <label for="studentName">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="studentName"
+                                name="studentName"
+                                placeholder="Enter your name"
+                                autocomplete="name"
+                                required>
+
+                        </div>
+
+
+                        <!-- EMAIL -->
+
+                        <div class="input-group">
+
+                            <label for="email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                placeholder="you@example.com"
+                                autocomplete="email"
+                                required>
+
+                        </div>
+
+
+                        <!-- DEPARTMENT -->
+
+                        <div class="input-group">
+
+                            <label for="department">
+                                Department
+                            </label>
+
+                            <select
+                                id="department"
+                                name="department"
+                                required>
+
+                                <option value="">
+                                    Select department
+                                </option>
+
+                                <option value="B.Sc Computer Science">
+                                    B.Sc Computer Science
+                                </option>
+
+                                <option value="BCA">
+                                    BCA
+                                </option>
+
+                                <option value="B.Com">
+                                    B.Com
+                                </option>
+
+                                <option value="BBA">
+                                    BBA
+                                </option>
+
+                                <option value="B.Sc Mathematics">
+                                    B.Sc Mathematics
+                                </option>
+
+                                <option value="B.Sc Physics">
+                                    B.Sc Physics
+                                </option>
+
+                                <option value="Other">
+                                    Other
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- YEAR -->
+
+                        <div class="input-group">
+
+                            <label for="year">
+                                Year of Study
+                            </label>
+
+                            <select
+                                id="year"
+                                name="year"
+                                required>
+
+                                <option value="">
+                                    Select year
+                                </option>
+
+                                <option value="1st Year">
+                                    1st Year
+                                </option>
+
+                                <option value="2nd Year">
+                                    2nd Year
+                                </option>
+
+                                <option value="3rd Year">
+                                    3rd Year
+                                </option>
+
+                                <option value="PG">
+                                    PG
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= EXPERIENCE ================= -->
+
+                <div class="form-section">
+
+                    <div class="form-section-heading">
+
+                        <span class="step-number">
+                            02
+                        </span>
+
+                        <div>
+
+                            <h2>
+                                Your experience
+                            </h2>
+
+                            <p>
+                                Tell us what you think about campus life.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CATEGORY -->
+
+                    <div class="input-group">
+
+                        <label for="category">
+                            Feedback Category
+                        </label>
+
+                        <select
+                            id="category"
+                            name="category"
+                            required>
+
+                            <option value="">
+                                What is your feedback about?
+                            </option>
+
+                            <option value="Academic">
+                                📚 Academic
+                            </option>
+
+                            <option value="Faculty">
+                                👨‍🏫 Faculty
+                            </option>
+
+                            <option value="Infrastructure">
+                                🏢 Infrastructure
+                            </option>
+
+                            <option value="Library">
+                                📖 Library
+                            </option>
+
+                            <option value="Laboratory">
+                                💻 Laboratory
+                            </option>
+
+                            <option value="Placement">
+                                💼 Placement
+                            </option>
+
+                            <option value="Campus Life">
+                                🌱 Campus Life
+                            </option>
+
+                            <option value="Other">
+                                💡 Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- ================= RATING ================= -->
+
+                    <div class="rating-section">
+
+                        <label>
+                            Overall Experience
+                        </label>
+
+                        <p class="rating-description">
+                            How would you rate your experience?
+                        </p>
+
+
+                        <div
+                            class="star-rating"
+                            id="starRating"
+                            role="radiogroup"
+                            aria-label="Overall rating">
+
+                            <button
+                                type="button"
+                                class="star"
+                                data-rating="1"
+                                aria-label="1 star">
+                                ★
+                            </button>
+
+                            <button
+                                type="button"
+                                class="star"
+                                data-rating="2"
+                                aria-label="2 stars">
+                                ★
+                            </button>
+
+                            <button
+                                type="button"
+                                class="star"
+                                data-rating="3"
+                                aria-label="3 stars">
+                                ★
+                            </button>
+
+                            <button
+                                type="button"
+                                class="star"
+                                data-rating="4"
+                                aria-label="4 stars">
+                                ★
+                            </button>
+
+                            <button
+                                type="button"
+                                class="star"
+                                data-rating="5"
+                                aria-label="5 stars">
+                                ★
+                            </button>
+
+                        </div>
+
+
+                        <div
+                            class="rating-label"
+                            id="ratingLabel">
+                            Select a rating
+                        </div>
+
+
+                        <input
+                            type="hidden"
+                            id="rating"
+                            name="rating"
+                            value="">
+
+                    </div>
+
+
+                    <!-- ================= MOOD ================= -->
+
+                    <div class="mood-section">
+
+                        <label>
+                            How are you feeling?
+                        </label>
+
+
+                        <div class="mood-options">
+
+                            <button
+                                type="button"
+                                class="mood-option"
+                                data-mood="Happy">
+
+                                <span>
+                                    😊
+                                </span>
+
+                                <strong>
+                                    Happy
+                                </strong>
+
+                                <small>
+                                    Great experience
+                                </small>
+
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="mood-option"
+                                data-mood="Neutral">
+
+                                <span>
+                                    😐
+                                </span>
+
+                                <strong>
+                                    Neutral
+                                </strong>
+
+                                <small>
+                                    It was okay
+                                </small>
+
+                            </button>
+
+
+                            <button
+                                type="button"
+                                class="mood-option"
+                                data-mood="Unhappy">
+
+                                <span>
+                                    😞
+                                </span>
+
+                                <strong>
+                                    Unhappy
+                                </strong>
+
+                                <small>
+                                    Needs improvement
+                                </small>
+
+                            </button>
+
+                        </div>
+
+
+                        <input
+                            type="hidden"
+                            id="mood"
+                            name="mood"
+                            value="">
+
+                    </div>
+
+
+                    <!-- ================= FEEDBACK ================= -->
+
+                    <div class="input-group">
+
+                        <div class="textarea-header">
+
+                            <label for="feedback">
+                                Your Feedback
+                            </label>
+
+                            <span id="characterCount">
+                                0 / 500
+                            </span>
+
+                        </div>
+
+
+                        <textarea
+                            id="feedback"
+                            name="feedback"
+                            rows="6"
+                            maxlength="500"
+                            placeholder="Tell us about your experience, suggestions or ideas..."
+                            required></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= PRIVACY ================= -->
+
+                <div class="privacy-note">
+
+                    <span>
+                        🔒
+                    </span>
+
+                    <p>
+                        Your feedback will be used only to
+                        understand and improve student experiences.
+                    </p>
+
+                </div>
+
+
+                <!-- ================= SUBMIT ================= -->
+
+                <button
+                    type="submit"
+                    class="submit-feedback-btn"
+                    id="submitFeedback">
+
+                    <span>
+                        Submit Feedback
+                    </span>
+
+                    <span class="submit-arrow">
+                        →
+                    </span>
+
+                </button>
+
+
+                <!-- ERROR -->
+
+                <p
+                    class="form-error"
+                    id="formError">
+                </p>
+
+            </form>
+
+
+            <!-- ================= SIDE PANEL ================= -->
+
+            <aside class="feedback-side">
+
+                <div class="side-icon">
+                    ✦
+                </div>
+
+                <h2>
+                    Every voice
+                    <span>counts.</span>
+                </h2>
+
+                <p>
+                    Small suggestions can lead to big
+                    improvements. Share your thoughts and
+                    help shape a better campus experience.
+                </p>
+
+
+                <div class="side-stat">
+
+                    <strong>
+                        4.6
+                    </strong>
+
+                    <div>
+
+                        <div class="side-stars">
+                            ★★★★★
+                        </div>
+
+                        <span>
+                            Average student rating
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="side-quote">
+
+                    <span>
+                        “
+                    </span>
+
+                    <p>
+                        The best improvements begin
+                        by listening.
+                    </p>
+
+                </div>
+
+            </aside>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= SUCCESS MODAL ================= -->
+
+    <div
+        class="success-overlay"
+        id="successOverlay">
+
+        <div class="success-modal">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <h2>
+                Thank you!
+            </h2>
+
+            <p>
+                Your feedback has been received successfully.
+                Your voice helps make our campus better.
+            </p>
+
+            <button
+                class="primary-btn"
+                id="closeSuccess">
+
+                Back to Home
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div>
+
+            <strong>
+                ✦ CampusPulse
+            </strong>
+
+            <p>
+                Student Feedback & Insights System
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <p>
+                Built as a Full Stack Development Project
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="js/main.js"></script>
+
+    <script src="js/feedback.js"></script>
+
+</body>
+
+</html> 
