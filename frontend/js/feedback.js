@@ -51,7 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // ============================================
 
     const API_URL =
-        "http://localhost:5000/api/feedback";
+        "https://campuspulse-1-20gy.onrender.com/api/feedback";
 
 
     // ============================================

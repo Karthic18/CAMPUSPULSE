@@ -8,7 +8,7 @@
 // API
 // ============================================================
 
-const API_URL = "http://localhost:5000/api/feedback";
+const API_URL = "https://campuspulse-1-20gy.onrender.com/api/feedback";
 
 let allFeedback = [];
 
